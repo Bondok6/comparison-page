@@ -8,6 +8,49 @@ body {
 	font-family: Montserrat;
 }
 
+.left_side {
+	position: fixed;
+	width: 8vw;
+	height: 100vh;
+	left: 0;
+	top: 0;
+}
+
+.left_slider {
+	height: 70vh;
+	margin-top: 140px;
+	overflow: hidden;
+}
+
+.slider {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.slider img {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+
+.arrows {
+	position: absolute;
+	font-size: 2rem;
+	color: #ee4673;
+	background-color: #222;
+	border: 1px solid #ee4673;
+	border-radius: 50%;
+	margin-left: 40px;
+	cursor: pointer;
+}
+
+.arrow_up {
+	top: 100px;
+}
+
 .comparison {
 	margin: 120px auto;
 }
