@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="chat.css">
+    <script defer src="main.js"></script>
+    <title>Document</title>
+    <style>
+      .left_side {
+        position: fixed;
+        width: 8vw;
+        height: 100vh;
+        left: 0;
+        top: 0;
+      }
+
+      .left_slider {
+        height: 70vh;
+        margin-top: 120px;
+        overflow: hidden;
+      }
+
+      .slider {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .slider img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+        cursor: pointer;
+      }
+
+      .arrows {
+        position: absolute;
+        font-size: 2rem;
+        color: #EE4673;
+        background-color: #222;
+        border: 1px solid #EE4673;
+        border-radius: 50%;
+        margin-left: 40px;
+        cursor: pointer;
+      }
+
+      .arrow_up {
+        top: 70px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="left_side">
+      <div class="left_slider">
+        <div class="slider">
+          <span> <img src="images/images/friend_2.png"></span>
+          <span> <img src="images/images/friend_1.png"></span>
+          <span> <img src="images/images/friend_4.png"></span>
+          <span> <img src="images/images/friend_3.png"></span>
+          <span> <img src="images/images/friend_5.png"></span>
+          <span> <img src="images/images/friend_2.png"></span>
+          <span> <img src="images/images/friend_3.png"></span>
+          <span> <img src="images/images/friend_5.png"></span>
+          <span> <img src="images/images/friend_4.png"></span>
+          <span> <img src="images/images/friend_1.png"></span>
+          <span> <img src="images/images/friend_3.png"></span>
+          <span> <img src="images/images/friend_5.png"></span>
+        </div>
+      </div>
+      <i class="material-icons arrows arrow_up">keyboard_arrow_up</i>
+      <i class="material-icons arrows arrow_down">keyboard_arrow_down</i>
+    </div>
+
+    <section class="comparison">
+
+      <div class="container">
+
+        <div class="profile">
+          <img src="images/style1.jpg" class="profile__img">
+          <h3 class="profile__name">Kyrillos Hany</h3>
+        </div>
+
+        <div class="outer_slider">
+          <div class="main_slider">
+
+            <div class="slide_one">
+              <div class="slider_card">
+                <div class="inner_slider">
+                  <div><img src="images/style1.jpg" alt=""></div>
+                  <div><img src="images/style3.jpg" alt=""></div>
+                  <div><img src="images/style1.jpg" alt=""></div>
+                </div>
+                <div class="month">
+                  Month 1
+                </div>
+              </div>
+              <a class="carousel-control-prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+            </div>
+
+            <div class="slide_two">
+              <table class="table">
+                <thead>
+                  <th />
+                  <th>saturday</th>
+                  <th>sunday</th>
+                  <th>monday</th>
+                  <th>tuesday</th>
+                  <th>wednesday</th>
+                  <th>thursday</th>
+                  <th>friday</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>8 Am</td>
+                    <td data-label></td>
+                    <td data-label></td>
+                    <td data-label></td>
+                    <td data-label></td>
+                    <td data-label></td>
+                    <td data-label></td>
+                    <td data-label></td>
+                  </tr>
+
+                  <tr>
+                    <td>11 Am</td>
+                    <td data-label></td>
+                    <td data-label></td>
+                    <td data-label></td>
+                    <td data-label></td>
+                    <td data-label></td>
+                    <td data-label></td>
+                    <td data-label></td>
+                  </tr>
+
+                  <tr>
+                    <td>3 Pm</td>
+                    <td data-label></td>
+                    <td data-label></td>
+                    <td data-label></td>
+                    <td data-label></td>
+                    <td data-label></td>
+                    <td data-label></td>
+                    <td data-label></td>
+
+                  </tr>
+
+                  <tr>
+                    <td>5 Pm</td>
+                    <td data-label></td>
+                    <td data-label></td>
+                    <td data-label></td>
+                    <td data-label></td>
+                    <td data-label></td>
+                    <td data-label></td>
+                    <td data-label></td>
+                  </tr>
+
+                  <tr>
+                    <td>7 Pm</td>
+                    <td data-label></td>
+                    <td data-label></td>
+                    <td data-label></td>
+                    <td data-label></td>
+                    <td data-label></td>
+                    <td data-label></td>
+                    <td data-label></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="slide-three">
+              <h1>Copy Graph Here</h1>
+            </div>
+          </div>
+          <i class="material-icons arrow arrow_back">arrow_back</i>
+          <i class="material-icons arrow arrow_forward">arrow_forward</i>
+        </div>
+
+      </div>
+
+
+
+    </section>
+  </body>
+
+</html>
