@@ -34,6 +34,11 @@ body {
 	border-radius: 50%;
 	margin-bottom: 15px;
 	cursor: pointer;
+	transition: .5s;
+	filter: grayscale(100%);
+}
+.slider img:hover {
+	filter: grayscale(0%);
 }
 
 .arrows {
