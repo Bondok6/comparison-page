@@ -24,7 +24,7 @@ let mainCounter = 1;
 const mainSize = 1000;
 
 let leftCounter = 1;
-const leftSize = 80;
+const leftSize = 90;
 
 slider.style.transform = 'translateX(' + -size * counter + 'px)';
 mainSlider.style.transform = 'translateX(' + -mainSize * mainCounter + 'px)';
@@ -47,14 +47,12 @@ prevBtn.addEventListener('click', () => {
 });
 
 forwardBtn.addEventListener('click', () => {
-	console.log('clicked');
-	if (mainCounter == 3) return;
+	if (mainCounter == 2) return;
 	mainSlider.style.transition = 'transform 0.4s ease-in-out';
 	mainCounter++;
 	mainSlider.style.transform = 'translateX(' + -mainSize * mainCounter + 'px)';
 });
 backBtn.addEventListener('click', () => {
-	console.log('clicked');
 	if (mainCounter <= 0) return;
 	mainSlider.style.transition = 'transform 0.4s ease-in-out';
 	mainCounter--;

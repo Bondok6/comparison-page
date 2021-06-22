@@ -7,6 +7,7 @@ body {
 	min-height: 100vh;
 	font-family: Montserrat;
 }
+/* _____________________________________________________________ */
 
 .left_side {
 	position: fixed;
@@ -14,10 +15,11 @@ body {
 	height: 100vh;
 	left: 0;
 	top: 0;
+	margin-top: 35px;
 }
 
 .left_slider {
-	height: 70vh;
+	height: 60vh;
 	margin-top: 140px;
 	overflow: hidden;
 }
@@ -56,6 +58,8 @@ body {
 	top: 100px;
 }
 
+/* __________________________________________________________ */
+
 .comparison {
 	margin: 120px auto;
 }
@@ -79,6 +83,8 @@ body {
 	color: #fff;
 }
 
+/* ________________________________________________________ */
+
 .outer_slider {
 	padding: 50px;
 	width: 1050px;
@@ -89,20 +95,22 @@ body {
 	display: flex;
 	width: 100%;
 }
+
 .slide_one,
-.slide_two,
-.slide_three {
+.slide_two {
 	width: 100%;
 }
-
+.slide_three {
+	min-width: 80%;
+}
 .slide_one {
 	margin-left: 30%;
 }
 .slide_two {
 	transform: translateX(400px);
 }
-.slide-three {
-	transform: translateX(800px);
+.slide_three {
+	transform: translateX(650px);
 }
 .slider_card {
 	border: 2px solid #d9a404;
@@ -153,9 +161,7 @@ body {
 	background-color: #222;
 	cursor: pointer;
 }
-.arrow_back {
-	float: left;
-}
+
 .arrow_forward {
 	float: right;
 }
@@ -188,8 +194,6 @@ body {
 	font-weight: bold;
 	transition: .6s;
 }
-
-/* Responsive  */
 
 @media (max-width: 500px) {
 	.table {
@@ -236,4 +240,30 @@ body {
 	}
 }
 
-/*________________________________*/
+/*____________________________________________*/
+
+@media screen and (max-width: 1000px) {
+	.left_side,
+	.arrow {
+		display: none;
+	}
+	.outer_slider {
+		width: 100%;
+		overflow: visible;
+		padding: 0;
+	}
+	.main_slider {
+		flex-direction: column;
+	}
+	.slide_one,
+	.slide_two,
+	.slide_three {
+		all: unset;
+		margin-top: 35px;
+	}
+	.carousel-control-prev,
+	.carousel-control-next {
+		top: 40vh;
+		margin: 0;
+	}
+}
